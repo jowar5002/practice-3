@@ -1,7 +1,7 @@
 .backimg{
 
   background-image: url("https://source.unsplash.com/random");
-  /* background-image: "images/wc1.jpg"; */
+  /* background-image: "public/images/wc1.jpg"; */
 background-repeat: no-repeat;
   opacity: 0.5;
   filter: grayscale(100%);

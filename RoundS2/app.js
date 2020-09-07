@@ -19,7 +19,8 @@ let app = express();
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-app.use(express.static('public'));
+//app.use(express.static('public'));
+app.use(express.static(__dirname));
 app.set('view engine', 'ejs');
 
 // let str1 = "";
@@ -322,4 +323,6 @@ app.post("/", function(req, res) {
 });
 
 
-app.listen(4000, () => console.log('Example app listening on port 4000!'));
+//app.listen(4000, () => console.log('Example app listening on port 4000!'));
+
+module.exports = app;

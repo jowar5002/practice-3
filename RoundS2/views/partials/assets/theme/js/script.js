@@ -359,7 +359,7 @@
                                         break;
                                     default: // image not found
                                         if (isBuilder) {
-                                            $img.css('background-image', 'url("images/no-video.jpg")')
+                                            $img.css('background-image', 'url("public/images/no-video.jpg")')
                                                 .show();
                                         }
                                 }
@@ -389,7 +389,7 @@
                                     $img.css('background-image', 'url("' + response[0].thumbnail_large + '")')
                                         .show();
                                 } else if (isBuilder) { // image not found
-                                    $img.css('background-image', 'url("images/no-video.jpg")')
+                                    $img.css('background-image', 'url("public/images/no-video.jpg")')
                                         .show();
                                 }
                             }
@@ -408,7 +408,7 @@
                         }
                     }
                 } else if (isBuilder) { // neither youtube nor vimeo
-                    $img.css('background-image', 'url("images/video-placeholder.jpg")')
+                    $img.css('background-image', 'url("public/images/video-placeholder.jpg")')
                         .show();
                 }
             });
